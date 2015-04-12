@@ -1,0 +1,311 @@
+/* Handcoded by RapidxHTML - http://www.rapidxhtml.com */
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, select, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+ol, ul {
+    list-style:none;
+    /*    overflow:hidden; 
+        min-height: 200px;
+        height: 300px; 
+        max-height: 300px;*/
+}
+
+fieldset, img {
+    border:0;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:'';
+    content:none;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+:focus {
+    outline:0;
+}
+
+/* fonts */
+@font-face {
+    font-family:'complete_in_himregular';
+    src:url('CompleteinHim-webfont.eot');
+    src:url('CompleteinHim-webfont.eot?#iefix') format('embedded-opentype'), url('CompleteinHim-webfont.woff2') format('woff2'), url('CompleteinHim-webfont.woff') format('woff'), url('CompleteinHim-webfont.ttf') format('truetype'), url('CompleteinHim-webfont.svg#complete_in_himregular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* page setup */
+body {
+    background:#EBEBEC url(../images/body_bg.png);
+    color:#3e3e3e;
+    font-size:32px;
+    position:relative;
+    font-family:Helvetica, Arial, sans-serif;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+/* links */
+a {
+    color:#F00;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+/* header elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family:Arial, sans-serif;
+    font-weight:bold;
+    color:#222;
+}
+
+h1 {
+    font-size:220%;
+}
+
+h2 {
+    font-size:200%;
+}
+
+h3 {
+    font-size:180%;
+}
+
+h4 {
+    font-size:160%;
+}
+
+h5 {
+    font-size:150%;
+}
+
+h6 {
+    font-size:125%;
+}
+
+/* clearing & floating */
+.clearingfix:after {
+    content:".";
+    display:block;
+    line-height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.clearingfix {
+    display:block;
+}
+
+b, strong {
+    font-weight:bold;
+}
+
+i, em {
+    font-style:italic;
+}
+
+u {
+    text-decoration:underline;
+}
+
+/* box */
+div#box {
+    background:url(../images/wooden-bg.jpg) 0 100% no-repeat;
+    background-size: cover;
+    -webkit-box-shadow:0 3px 8px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 3px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:0 3px 8px 0 rgba(0, 0, 0, 0.5);
+    -webkit-border-bottom-right-radius:6px;
+    -webkit-border-bottom-left-radius:6px;
+    -moz-border-radius-bottomright:6px;
+    -moz-border-radius-bottomleft:6px;
+    border-bottom-right-radius:6px;
+    border-bottom-left-radius:6px;
+    height:auto !important; /* normale Browser */
+    min-height:100%; /* normale Browser */
+}
+
+div#box div.box-cont {
+    background: url(../images/canvas-bg.png);
+    box-shadow:0 -2px 5px 1px rgba(0, 0, 0, 0.25), 0 10px 0 -5px #DDD, 0 10px 1px -4px rgba(0, 0, 0, 0.25), 0 20px 0 -10px #DDD, 0 20px 1px -9px rgba(0, 0, 0, 0.25);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    /*    height:80vh;*/
+}
+
+/* box header */
+header.box-header {
+    background: url(../images/box-header.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    /*background: url(../images/box-header.png);*/
+    padding:5vh 4.5vh;
+    height:10vh;
+    position:relative;
+    top:-4px;
+    margin-bottom:-4px;
+    color:#fff;
+    box-shadow:0 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+header.box-header div.box-title {
+    float:left;
+    letter-spacing:-1px;
+    text-shadow:rgba(0, 0, 0, 0.5) 1px 1px 2px;
+}
+
+header.box-header div.box-links {
+    float:right;
+}
+
+header.box-header div.box-links a {
+    margin-left: 20px;
+    display: none;
+}
+
+/* todo list */
+section.todo {
+    position:relative;
+    background: url(../images/vertical-line-bg.png) 48px 0 repeat-y;
+    margin:0 18px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling:touch;
+    height: 80vh;
+}
+
+section.todo .todo-bg {
+    background: url(../images/border-bg.png) 0 22px repeat-x;
+    padding:54px 0 35px 0;
+}
+
+section.todo .todo-list {
+    background:url(../images/horizontal-line-bg.png) 0 4px repeat;
+    padding-top:3px;
+}
+
+section.todo .todo-list li {
+    position:relative;
+    color: rgba(62, 62, 62, 0.9);
+    padding:3px 15px 0 65px;
+    line-height:38px;
+    font-size:36px;
+    width: auto;
+    font-family:"complete_in_himregular";
+    overflow:hidden;
+}
+
+section.todo .todo-list li span.btns {
+    position:absolute;
+    top:7px;
+    right:10px;
+    display:none;
+}
+
+section.todo .todo-list li span.btns a {
+    margin:0 7px;
+}
+
+section.todo .todo-list li:hover span.btns {
+    display:block;
+}
+
+section.todo .todo-list li.done {
+    text-decoration:line-through;
+    color: rgba(62, 62, 62, 0.6)
+}
+
+section.todo .todo-list .toggle {
+    display:block;
+    position:absolute;
+    top:15px;
+    left:15px;
+}
+
+
+section.todo .todo-list li input[type=text] {
+    background-color: transparent;
+    color: rgba(62, 62, 62, 0.9);
+    line-height:38px;
+    font-size:36px;
+    font-family:"complete_in_himregular";
+    width: 80%;
+    overflow:hidden;
+    border: 0px solid;
+}
+
+section.todo .todo-list li input[type=text]:focus{
+    outline: 0;
+}
+
+/* CheckBox 
+
+section.todo .todo-list input[type="checkbox"] {
+    display:none;
+}
+
+section.todo .todo-list input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../images/checkbox-unchecked.png) left top no-repeat;
+    cursor:pointer;
+}
+
+section.todo .todo-list input[type="checkbox"]:checked + label span {
+    background:url(../images/checkbox-checked.png) -19px top no-repeat;
+}
+*/
+
+
+/* Responsive layout */
+
+@media only screen and (min-width: 480px) {
+
+    header.box-header div.box-links a {
+        display: inline;
+    }
+}
+
+
+@media only screen and (min-width: 640px) {
+    .reframe { max-width: 760px }
+    div#box {
+        padding:25px 25px 45px 25px;
+    }
+    section.todo {
+        height: 70vh;
+    }
+
+}
+
+@media only screen and (min-width: 980px) {
+    .reframe { max-width: 980px }
+    div#box {
+        margin:50px;
+    }
+    section.todo {
+        height: 60vh;
+    }
+}
